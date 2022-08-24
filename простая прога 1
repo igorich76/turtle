@@ -1,0 +1,7 @@
+##
+uses Turtle;// вызываем модуль Черепаха
+Turtle.Down;
+Turtle.Forw(100);
+Turtle.Turn(270);
+Turtle.Forw(100);
+// я не знал, что есть такой модуль...
