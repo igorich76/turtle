@@ -51,3 +51,29 @@ begin
     a += 1;
   end;
 end.
+
+// и ещё улучшение:
+program Спираль;
+uses Turtle, graphWPF;
+
+procedure Кружок;
+begin
+  loop 360 do
+  begin
+    Turtle.Down; 
+    Turtle.Forw(0.1);
+    Turtle.Turn(1); 
+    Turtle.Up;
+  end;
+end;
+
+begin
+  Turtle.SetWidth(2);  
+  Turtle.SetColor(Gcolor.FromRgb(255, 0, 0));
+ for var i := 1 to 100 do //улучшения здесь
+  begin
+    Turtle.Forw(i);  
+    Кружок;
+    Turtle.Turn(20);
+   end;
+end.
