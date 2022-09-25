@@ -16,7 +16,6 @@ begin
 for var i := 0 to 100 do begin
   Turtle.Forw(a);
   Кружок;
-  Turtle.Forw(a-a);
   Turtle.Turn(20);
   a := a + 1;
   end;
