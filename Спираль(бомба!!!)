@@ -23,3 +23,31 @@ end.
 
 //от начала и до конца сам сделал!
 //ментр подсказал только 15 строку
+//вариант с loop:
+
+program Спираль;
+uses Turtle, graphWPF;
+
+procedure Кружок;
+begin
+  loop 360 do
+  begin
+    Turtle.Down;  
+    Turtle.Forw(0.1);
+    Turtle.Turn(1);
+    Turtle.Up;
+  end;
+end;
+
+begin
+  Turtle.SetWidth(2);  
+  Turtle.SetColor(Gcolor.FromRgb(255, 0, 0));
+  var a := 0.1;
+  loop 100 do
+  begin
+    Turtle.Forw(a);
+    Кружок; 
+    Turtle.Turn(20);
+    a += 1;
+  end;
+end.
