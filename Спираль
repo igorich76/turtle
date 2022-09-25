@@ -1,0 +1,14 @@
+#
+uses Turtle, graphWPF;
+Turtle.SetWidth(5);
+Turtle.Down;
+Turtle.SetColor(Gcolor.FromRgb(255,0,0));
+ var R := 1.0;
+ Turtle.Turn(10);
+ var n := 240;
+ for var i := 1 to n do
+ begin
+ Turtle.Forw(R);
+ Turtle.Turn(10);
+ R += 0.1;
+ end;
