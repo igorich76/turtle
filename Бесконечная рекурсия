@@ -1,0 +1,18 @@
+program Пример_рекурсия;
+
+uses Turtle, graphWPF;
+
+procedure Рекурсия;
+begin
+  Turtle.Forw(150);
+  Turtle.Turn(77);
+  Рекурсия;
+end;
+
+
+begin
+  Turtle.SetColor(Gcolor.FromRgb(255, 0, 0));
+  Turtle.Down;
+  Turtle.SetWidth(1);
+  Рекурсия;
+end.
