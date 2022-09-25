@@ -22,3 +22,4 @@ begin
   Turtle.SetWidth(1);
   Квадрат(k);
 end.
+//рекурсия без выхода
