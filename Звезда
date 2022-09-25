@@ -9,3 +9,16 @@ Turtle.Forw(100);
 Turtle.Turn(144);
 Turtle.Forw(100);
 end;
+////////// либа SmallBasic ///////
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+Turtle.Show();
+GraphicsWindow.PenColor := 'red';
+Turtle.PenDown;
+loop 5 do begin
+  Turtle.Turn(72);
+  Turtle.Move(100);
+  Turtle.Turn(216);
+  Turtle.Move(100);
+end;
