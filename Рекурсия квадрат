@@ -1,0 +1,24 @@
+program Пример_рекурсия;
+
+uses Turtle, graphWPF;
+
+var
+  k := 200;
+
+procedure Квадрат(k: integer);
+begin
+  loop 4 do
+  begin
+    Turtle.Forw(k);
+    Turtle.Turn(270);
+  end;
+  Квадрат(k - 5);
+end;
+
+
+begin
+  Turtle.SetColor(Gcolor.FromRgb(255, 0, 0));
+  Turtle.Down;
+  Turtle.SetWidth(1);
+  Квадрат(k);
+end.
