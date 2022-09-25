@@ -1,0 +1,26 @@
+program Спираль;
+uses Turtle, graphWPF;
+var a := 0.1;
+procedure Кружок;
+begin
+  for var i:=0 to 359 do begin
+  Turtle.Down;  
+  Turtle.Forw(0.1);
+  Turtle.Turn(1);
+  Turtle.Up;
+end;
+end; 
+begin  
+  Turtle.SetWidth(2);  
+  Turtle.SetColor(Gcolor.FromRgb(255,0,0));
+for var i := 0 to 100 do begin
+  Turtle.Forw(a);
+  Кружок;
+  Turtle.Forw(a-a);
+  Turtle.Turn(20);
+  a := a + 1;
+  end;
+end.
+
+//от начала и до конца сам сделал!
+//ментр подсказал только 15 строку
