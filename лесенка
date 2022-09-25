@@ -1,0 +1,12 @@
+##
+uses Turtle, graphWPF;
+Turtle.ToPoint(10,400);
+Turtle.SetColor(Gcolor.FromRgb(255, 0, 0));
+Turtle.Down;
+loop 8 do begin
+  Turtle.Forw(50);
+  Turtle.Turn(270);
+  Turtle.Forw(50);
+  Turtle.Turn(90);  
+end;
+ Turtle.Forw(50);
