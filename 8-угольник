@@ -1,0 +1,12 @@
+##
+uses Turtle, graphWPF;
+Turtle.SetWidth(10);
+Turtle.Down;
+Turtle.SetColor(Gcolor.FromRgb(255,0,0));
+for var i:=0 to 11 do begin
+Turtle.Forw(50);
+Turtle.Turn(30);
+end;
+
+//сумма углов получается 360. N-уголник нужно корректировать по количеству углов и шагам цикла.
+//360/8=45, 45 градусов будут углы у 8-угольника.
