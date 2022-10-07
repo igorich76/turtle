@@ -1,0 +1,19 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+Turtle.Speed:=10;
+Turtle.Show;
+Turtle.PenDown;
+GraphicsWindow.PenColor := 'green';
+GraphicsWindow.PenWidth := 8;
+Turtle.X := 600-100;
+Turtle.Y := 400-20;
+var R := 120;
+Turtle.TurnRight;
+var n := 8; // можно 8
+for var i := 1 to n do
+begin
+  Turtle.Turn(-360/n);
+  Turtle.Move(R);
+end;
