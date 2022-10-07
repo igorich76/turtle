@@ -1,0 +1,20 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library;
+GraphicsWindow.Width:=250; //размер ширина
+GraphicsWindow.Height:=250; //высота окна
+GraphicsWindow.Title:='Черепашка-дизайнер';
+Turtle.X:=50;
+Turtle.Y:=200;
+Turtle.Show;
+{GraphicsWindow.PenColor := 'red';
+Turtle.PenDown;
+loop 5 do begin
+  Turtle.Turn(72);
+  Turtle.Move(100);
+  Turtle.Turn(216);
+  Turtle.Move(100);
+end;
+Turtle.PenUp;
+Turtle.Turn(100);
+Turtle.Move(300);}
