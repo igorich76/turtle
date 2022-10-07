@@ -18,3 +18,17 @@ end;
 Turtle.PenUp;
 Turtle.Turn(100);
 Turtle.Move(300);}
+
+////////////////////////// игра цветом /////////////////////////
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+GraphicsWindow.BackgroundColor:='black';
+Turtle.X := 600 div 2;
+Turtle.Y := 400 div 2;
+Turtle.Show;
+Turtle.PenDown;
+GraphicsWindow.PenColor:='white';
+GraphicsWindow.PenWidth:=8;
+Turtle.Move(100);
