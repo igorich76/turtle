@@ -24,7 +24,7 @@ Turtle.Move(300);}
 {$reference SmallBasicLibrary.dll}
 uses Microsoft.SmallBasic.Library,System;
 
-GraphicsWindow.BackgroundColor:='black';
+GraphicsWindow.BackgroundColor:='black'; // красиво смотрится orange
 Turtle.X := 600 div 2;
 Turtle.Y := 400 div 2;
 Turtle.Show;
