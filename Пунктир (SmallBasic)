@@ -1,0 +1,18 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+GraphicsWindow.BackgroundColor := 'orange';
+Turtle.X := 600 div 2;
+Turtle.Y := 400 div 2;
+Turtle.Show;
+Turtle.PenDown;
+GraphicsWindow.PenColor := 'white';
+GraphicsWindow.PenWidth := 8;
+for var i := 1 to 15 do
+begin  
+  if (i mod 2 = 0) then Turtle.PenUp
+  else Turtle.PenDown;
+  Turtle.Move(10);
+end;
+Turtle.Hide; 
