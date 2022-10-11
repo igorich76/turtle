@@ -1,4 +1,4 @@
-#
+##
 uses Turtle, graphWPF;
 Turtle.SetWidth(5);
 Turtle.Down;
