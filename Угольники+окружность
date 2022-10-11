@@ -1,0 +1,43 @@
+## //окружность
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+GraphicsWindow.BackgroundColor:='black';
+GraphicsWindow.PenColor:='white';
+
+Turtle.X := 500;
+Turtle.Y := 400;
+
+Turtle.Show;
+var R := 2;
+Turtle.Speed := 10;
+Turtle.TurnRight;
+var n := 100; //6
+for var i:=1 to n do
+begin
+  Turtle.Turn(-360/n);
+  Turtle.Move(R);
+end;
+Turtle.Hide;
+//////////////////////////////== любой многоугольник!!! ==//////////////////////////////
+## //окружность
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+GraphicsWindow.BackgroundColor:='black';
+GraphicsWindow.PenColor:='white';
+
+Turtle.X := 500;
+Turtle.Y := 400;
+
+Turtle.Show;
+var R := 50;
+Turtle.Speed := 10;
+Turtle.TurnRight;
+var n := 10; //6
+for var i:=1 to n do
+begin
+  Turtle.Turn(-360/n);
+  Turtle.Move(R);
+end;
+Turtle.Hide;
