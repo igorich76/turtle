@@ -1,0 +1,20 @@
+## //пунктир
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+Turtle.Show;
+var a := 5;
+GraphicsWindow.BackgroundColor:='black';
+GraphicsWindow.PenColor:='white';
+Turtle.X := 50;
+Turtle.Y := 350;
+Turtle.Speed := 10;
+Turtle.Angle := 60;
+loop 60 do 
+  begin
+    Turtle.PenDown;
+    Turtle.Move(a);
+    Turtle.PenUp;
+    Turtle.Move(a);
+  end;
+Turtle.Hide; 
