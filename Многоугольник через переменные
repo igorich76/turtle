@@ -1,0 +1,13 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+
+Println('Программа рисует правильный многоугольник');
+var a := ReadlnInteger('Введите количество сторон');
+Turtle.Show;
+loop a do
+begin
+  Turtle.Move(50);
+  Turtle.Turn(360/a);
+end;
