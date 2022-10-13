@@ -25,4 +25,31 @@ end;
 sw.Stop; //стоп, если перезапустить нужно, то sw.Restart
 Print(sw.ElapsedMilliseconds); //вывод результата 
 
-// всё сам сделал. Нужно будет цикл усовершенствовать.
+/////////////////////////////////////// всё сам сделал. Нужно будет цикл усовершенствовать.
+///Вариант 2 (усовершенствованный)
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+var sw := new Stopwatch;// счётчик времени
+sw.Start; //старт счетчика
+Turtle.Show; Turtle.Speed := 10;
+var (a, b) := (10, 5);
+var (c, d) := (-10, -5);
+var n := ReadlnInteger('Введите количество лепестков');
+for var i := 1 to n do 
+begin
+  loop 10 do
+  begin
+    Turtle.Move(a); Turtle.Turn(b);  
+  end;
+  Turtle.PenUp;
+  loop 10 do 
+  begin
+    Turtle.Move(c); Turtle.Turn(d);
+  end;  
+  Turtle.PenDown;
+  Turtle.Turn(360 / n);
+end;
+sw.Stop; //стоп, если перезапустить нужно, то sw.Restart
+Print(sw.ElapsedMilliseconds); //вывод результата
