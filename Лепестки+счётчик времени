@@ -1,0 +1,28 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+var sw := new Stopwatch;// счётчик времени
+sw.Start; //старт счетчика
+Turtle.Show;
+Turtle.Speed := 10;
+loop 18 do 
+  begin
+loop 45 do
+  begin
+    Turtle.Move(2);
+    Turtle.Turn(2);  
+  end;
+Turtle.PenUp;
+loop 45 do 
+  begin
+    Turtle.Move(-2);
+    Turtle.Turn(-2);
+  end;  
+Turtle.PenDown;
+Turtle.Turn(20);
+end;
+sw.Stop; //стоп, если перезапустить нужно, то sw.Restart
+Print(sw.ElapsedMilliseconds); //вывод результата 
+
+// всё сам сделал. Нужно будет цикл усовершенствовать.
