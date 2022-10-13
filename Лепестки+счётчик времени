@@ -36,7 +36,7 @@ sw.Start; //старт счетчика
 Turtle.Show; Turtle.Speed := 10;
 var (a, b) := (10, 5);
 var (c, d) := (-10, -5);
-var n := ReadlnInteger('Введите количество лепестков');
+var n := ReadlnInteger('Введите количество лучей');
 for var i := 1 to n do 
 begin
   loop 10 do
@@ -53,3 +53,4 @@ begin
 end;
 sw.Stop; //стоп, если перезапустить нужно, то sw.Restart
 Print(sw.ElapsedMilliseconds); //вывод результата
+// если ввести 100 лучей, то картинка получается бомбическая!!!
