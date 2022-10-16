@@ -1,0 +1,72 @@
+## // программа Квадрат
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+Turtle.Show;
+GraphicsWindow.PenColor := GraphicsWindow.GetRandomColor;
+Turtle.Move(100);
+Turtle.TurnRight;
+Turtle.Move(100);
+Turtle.TurnRight;
+Turtle.Move(100);
+Turtle.TurnRight;
+Turtle.Move(100);
+Turtle.TurnRight;
+//////////////////////////////////////////////////
+## // программа 6-угольник
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+Turtle.Show;
+GraphicsWindow.PenColor := GraphicsWindow.GetRandomColor;
+Turtle.Move(100);
+Turtle.turn(60);
+Turtle.Move(100);
+Turtle.turn(60);
+Turtle.Move(100);
+Turtle.turn(60);
+Turtle.Move(100);
+Turtle.turn(60);
+Turtle.Move(100);
+Turtle.turn(60);
+Turtle.Move(100);
+Turtle.turn(60);
+/////////////////////////////////////////////
+## // программа Снежинка
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+
+Turtle.Show;
+GraphicsWindow.PenColor := GraphicsWindow.GetRandomColor;
+Turtle.Speed := 10;
+Turtle.Move(100);
+Turtle.Move(-50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Move(-100);
+Turtle.Move(50);
+Turtle.Turn(45);
+Turtle.Move(50);
+Turtle.Move(-100);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Move(-100);
+Turtle.Move(50);
+Turtle.Hide;
+//////////////////////////////////////////////////////
+## // Многоугольник
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+Turtle.X := 100;
+Turtle.Y := 200;
+Turtle.Show;
+Turtle.Speed := 10;
+var n := ReadlnInteger('Сколько углов? >>');
+loop n do 
+begin
+  GraphicsWindow.PenColor := GraphicsWindow.GetRandomColor;
+  Turtle.Move(30);
+  Turtle.turn(360 / n);
+end; 
