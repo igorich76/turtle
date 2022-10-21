@@ -49,7 +49,7 @@ begin
     Turtle.Move(c); Turtle.Turn(d);
   end;  
   Turtle.PenDown;
-  Turtle.Turn(360 / n);
+  Turtle.Turn(360 / n); // можно поэкспериментировать с минусом/плюсом. Крутая вещь!
 end;
 sw.Stop; //стоп, если перезапустить нужно, то sw.Restart
 Print(sw.ElapsedMilliseconds); //вывод результата
