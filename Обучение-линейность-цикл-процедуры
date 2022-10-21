@@ -70,3 +70,26 @@ begin
 end;
 Turtle.Hide;
 /////////////-------процедура------//////////
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+procedure Лепесток;
+begin
+  var a := 50;
+  var b := 90;
+  loop 4 do 
+  begin
+    Turtle.Move(a);
+    Turtle.Turn(b);
+  end; 
+end;
+
+Turtle.Speed := 10;
+loop 8 do 
+begin
+  Лепесток;
+  Turtle.Turn(45);
+end;
+Turtle.Hide; 
+////////////////////////
