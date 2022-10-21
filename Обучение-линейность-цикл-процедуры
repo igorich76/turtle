@@ -74,7 +74,7 @@ Turtle.Hide;
 {$reference SmallBasicLibrary.dll}
 uses Microsoft.SmallBasic.Library, System;
 
-procedure Лепесток;
+procedure Квадрат;
 begin
   var a := 50;
   var b := 90;
@@ -88,7 +88,7 @@ end;
 Turtle.Speed := 10;
 loop 8 do 
 begin
-  Лепесток;
+  Квадрат;
   Turtle.Turn(45);
 end;
 Turtle.Hide; 
