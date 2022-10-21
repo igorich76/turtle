@@ -53,3 +53,27 @@ begin
       Turtle.TurnLeft;
     end;
 end;
+///////////////////----- и ещё -------////////////
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+procedure Прямоугольник;
+begin
+  var a := 50;
+  var b := 90;
+  loop 4 do 
+  begin
+    Turtle.Move(a);
+    Turtle.Turn(b);
+  end;
+end;
+
+begin
+  Turtle.Speed := 10;
+  loop 4 do 
+  begin
+    Прямоугольник;
+    Turtle.TurnLeft;
+  end;
+end; 
