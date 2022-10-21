@@ -34,4 +34,20 @@ Turtle.Move(50);
 Turtle.Turn(90);
 Turtle.Move(50);
 //////////////////////---цикл-----///////////////////////////
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
 
+Turtle.Speed := 10;
+loop 8 do 
+begin
+  Turtle.Move(50);
+  Turtle.Turn(90);
+  Turtle.Move(50);
+  Turtle.Turn(90);
+  Turtle.Move(50);
+  Turtle.Turn(90);
+  Turtle.Move(50);
+  Turtle.Turn(45);//
+end;
+////////////////////////
