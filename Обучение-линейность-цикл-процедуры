@@ -1,0 +1,37 @@
+////// линейность
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+Turtle.Speed := 10;
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(45);//
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(45);//
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(45);//
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+Turtle.Turn(90);
+Turtle.Move(50);
+//////////////////////---цикл-----///////////////////////////
+
