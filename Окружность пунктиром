@@ -1,0 +1,16 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library, System;
+
+Turtle.Speed:=10;
+Turtle.X := 400;
+Turtle.Y := 200;
+
+loop 100 do 
+begin
+  Turtle.Turn(-4);
+  Turtle.PenUp;
+  Turtle.Move(2);
+  Turtle.PenDown;
+  Turtle.Move(2);
+end;
