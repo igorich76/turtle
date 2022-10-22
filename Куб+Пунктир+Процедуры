@@ -1,0 +1,61 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+procedure Пунктир1;
+begin
+  loop 10 do
+  begin
+    Turtle.Move(5);
+    Turtle.PenUp;
+    Turtle.Move(5);
+    Turtle.PenDown;    
+  end;
+end;
+
+procedure Пунктир2;
+begin
+  loop 8 do
+  begin
+    Turtle.Move(5);
+    Turtle.PenUp;
+    Turtle.Move(5);
+    Turtle.PenDown;    
+  end;
+end;
+
+Turtle.Speed := 10;
+Turtle.Move(100);
+Turtle.Turn(90);
+Turtle.Move(100);
+Turtle.Turn(90);
+Turtle.Move(100);
+Turtle.Turn(90);
+Turtle.Move(100);
+Turtle.Turn(90);
+Turtle.Move(100);
+Turtle.Turn(45);
+Turtle.Move(80);
+Turtle.Turn(45);
+Turtle.Move(100);
+Turtle.Turn(135);
+Turtle.Move(80);
+Turtle.Turn(-45);
+Turtle.Move(100);
+Turtle.Turn(-135);
+Turtle.Move(80);
+Turtle.Turn(-45);
+Turtle.Move(100);
+Turtle.Turn(-90);
+Turtle.Move(100);
+Turtle.Turn(-90);
+
+Пунктир1;
+Turtle.Turn(45);
+Пунктир2;
+Turtle.Turn(180);
+Turtle.PenUp;
+Turtle.Move(80);
+Turtle.Turn(45);
+Пунктир1;
+
+Turtle.Hide;
