@@ -1,0 +1,31 @@
+##
+{$reference SmallBasicLibrary.dll}
+uses Microsoft.SmallBasic.Library,System;
+/////////1-я процедура (лепесток)
+procedure Lepestok;
+begin
+Turtle.Turn(20);
+Turtle.Move(50);
+Turtle.Turn(-110);
+Turtle.Move(35);
+Turtle.Turn(-110);
+Turtle.Move(50);
+end;
+//////////2-я процедура (разворот)
+procedure Razvorot;
+begin
+Turtle.Turn(-70);
+Turtle.PenUp;
+Turtle.Move(50);
+Turtle.Turn(-90);
+Turtle.PenDown;
+end;
+///////////основная программа
+Turtle.x := 100; 
+Turtle.y := 200;
+Turtle.Speed:=10;
+loop 10 do 
+begin
+  Lepestok;
+  Razvorot;
+end;
