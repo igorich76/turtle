@@ -1,0 +1,39 @@
+// наконец-то сделали "родную" Черепаху, но так и не включили еёё отображение
+##
+uses turtlewpf;
+
+Down;
+SetSpeed(10); SetWidth(2); SetColor(Colors.Aqua);
+
+for var i := 1 to 4 do
+begin
+  Turn(90); Forw(100);
+end;
+
+Turn(45);Forw(80);
+Turn(45);Forw(100);
+Turn(90);Forw(100);
+Turn(45);Forw(80);
+Turn(135);Forw(100);
+Turn(45);Forw(80);
+Up;
+Turn(-135);Forw(100);
+Turn(-90);
+
+for var i := 1 to 12 do
+begin
+  Forw(4);Up; Forw(4); Down;
+end;
+
+Turn(45);
+
+for var i := 1 to 10 do
+begin
+  Forw(4); Up; Forw(4); Down;
+end;
+Up;Forw(-80);Turn(-135);
+
+for var i := 1 to 12 do
+begin
+  Forw(4); Up; Forw(4); Down;
+end;
