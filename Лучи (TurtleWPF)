@@ -1,0 +1,19 @@
+##
+uses turtlewpf;
+
+procedure luch;
+begin
+  Forw(150);
+  Forw(-150);
+end;
+
+Down;
+SetColor(Colors.Blue); SetWidth(3);
+SetSpeed(10);
+
+var n := ReadlnInteger('Введите кол-во лучей:');
+for var i:=1 to n do
+  begin
+    luch;
+    Turn(360/n); 
+  end;
