@@ -51,3 +51,24 @@ for var i := 1 to 34 do // кол-во итераций отрегулирова
     b += 0.01; // угол поворота
   end; 
   Hide;
+//////======= спираль пунктиром =======////////
+##
+uses Turtlewpf;
+
+MoveTo(100,450);
+SetWidth(5);SetColor(Colors.Blue); SetSpeed(10);
+Down;
+var a := 0;
+var b := 0.0;
+
+for var i:=1 to 50 do  
+  begin  
+    for var j:=1 to 50-a do
+      begin
+        Forw(4);Up; Forw(4);Down;
+      end;  
+    Turn(90+b);
+    a += 1;
+    b += 0.05;
+  end;
+Hide;
