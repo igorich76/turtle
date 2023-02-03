@@ -1,0 +1,13 @@
+##
+uses turtlewpf;
+
+Down;
+
+for var i:=1 to 500 do
+begin
+  MoveTo(Random(50,700),Random(50,600));
+  SetColor(Colors.Blue); SetWidth(Random(1,8)); SetSpeed(10);
+  Forw(Random(1,100));
+  Turn(Random(5,360));
+end;
+Hide;
