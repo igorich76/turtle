@@ -32,3 +32,22 @@ for var i := 1 to 32 do
     b += 0.01;
   end; 
   Hide;
+////// ====== 6 - угольник ======/////////////
+##
+uses Turtlewpf;
+
+MoveTo(100,400);
+SetWidth(2);SetColor(Colors.Blue); SetSpeed(10);
+Down;
+
+var a := 0;
+var b := 0.0;
+
+for var i := 1 to 34 do // кол-во итераций отрегулировать
+ for var j := 1 to 6 do // угольник устанавливаем
+  begin
+    Forw(200-a); Turn(60+b); //угол меняем 360/n и длину ребра
+    a += 1; //плотность спирали
+    b += 0.01; // угол поворота
+  end; 
+  Hide;
