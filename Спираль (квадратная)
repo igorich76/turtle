@@ -13,3 +13,22 @@ for var i := 1 to 12 do
     Forw(250-a); Turn(90);
     a += 5;
   end; 
+//////====== улучшил спираль, чуть повернул ====///////
+##
+uses Turtlewpf;
+
+MoveTo(100,400);
+SetWidth(3);SetColor(Colors.Blue); SetSpeed(10);
+Down;
+
+var a := 0;
+var b := 0.0;
+
+for var i := 1 to 32 do
+ for var j := 1 to 4 do
+  begin
+    Forw(250-a); Turn(90+b);
+    a += 2;
+    b += 0.01;
+  end; 
+  Hide;
