@@ -1,0 +1,15 @@
+##
+uses Turtlewpf;
+
+MoveTo(100,400);
+SetWidth(3);SetColor(Colors.Blue); SetSpeed(10);
+Down;
+
+var a := 0;
+
+for var i := 1 to 12 do
+ for var j := 1 to 4 do
+  begin
+    Forw(250-a); Turn(90);
+    a += 5;
+  end; 
