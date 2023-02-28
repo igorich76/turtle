@@ -34,6 +34,23 @@ Down;
 SetColor(Colors.Blue); SetWidth(3);
 SetSpeed(10);
 
+//////////////--- лучи пунктиром + цвет рандом -----//////
+##
+uses turtlewpf;
+Down;
+SetWidth(3);
+var n := ReadlnInteger('Введите кол-во лучей>>');
+for var i:=1 to n do
+  begin   
+   for var j:=1 to 15 do
+     begin
+       SetColor(RGB(Random(0,255), Random(0,255), Random(0,255)));
+       Down; Forw(4); Up; Forw(4);
+     end;
+   Forw(-120);
+   Turn(360/n);
+  end;
+
 var n := ReadlnInteger('Введите кол-во лучей:');
 for var i:=1 to n do
   begin
