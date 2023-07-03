@@ -1,0 +1,35 @@
+// Знакомство с Черепашкой
+{$reference SmallBasicLibrary.dll}
+uses
+ Microsoft.SmallBasic.Library;
+type gw = GraphicsWindow;
+// размеры окна:
+const GW_WIDTH = 320;
+const GW_HEIGHT = 320;
+const CX = GW_WIDTH div 2;
+const CY = GW_HEIGHT div 2;
+procedure Prepare();
+begin
+ gw.Hide();
+ gw.Title := 'Знакомство с Черепашкой';
+ gw.Width := GW_WIDTH;
+ gw.Height := GW_HEIGHT;
+ gw.Show();
+ gw.Left := (Desktop.Width - gw.Width) / 2;
+ gw.Top := (Desktop.Height - gw.Height) / 2;
+ gw.CanResize := false;
+ gw.BackgroundColor := 'SeaShell';
+end;
+
+procedure Show();
+begin
+ // создаём Черепашку:
+ Turtle.Show();
+ // устанавливаем Черепашку в центре окна:
+ Turtle.X := CX;
+ Turtle.Y := CY;
+end;
+begin
+ Prepare;
+ Show;
+end.
