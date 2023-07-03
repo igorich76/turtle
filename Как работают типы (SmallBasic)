@@ -1,0 +1,18 @@
+{$reference SmallBasicLibrary.dll}
+program pr1; // знакомство с Черепашкой
+uses Microsoft.SmallBasic.Library;
+type gw = GraphicsWindow;
+type t = Turtle;
+begin
+gw.Title:='Квадрат';
+t.Speed:=5; 
+t.Show;
+gw.PenColor := 'purple';
+gw.PenWidth := 5;
+t.PenDown;
+t.Move(100);
+t.Turn(90);
+t.Move(100); 
+//а дальше сделайте сами, чтобы получился квадрат
+t.Hide;
+end.
